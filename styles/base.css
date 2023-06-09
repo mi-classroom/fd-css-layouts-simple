@@ -1,0 +1,139 @@
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 150%;
+    hyphens: auto;
+}
+
+body{
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+body > * {
+    max-width: 60em;
+}
+
+/* Text
+############################################################################ */
+
+h1, h2, h3{
+    font-weight: normal;
+    line-height: 100%;
+    padding-bottom: 1rem;
+    hyphens: none;
+}
+
+h1{
+    font-size: 3rem;
+    padding-top: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+
+h3{
+    font-weight: bold;
+    padding-top: 2rem;
+}
+
+p{
+    margin-bottom: 1rem;
+}
+
+
+/* Lists
+############################################################################ */
+
+ol li{
+    margin-bottom: 1rem;
+}
+
+
+/* Images
+############################################################################ */
+
+figure{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 66%;
+}
+
+figure img{
+    width: 100%;
+}
+
+figcaption{
+    padding-top: 0.5rem;
+}
+
+/* Navigation
+############################################################################ */
+
+.main-navigation{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: hsla(0, 0%, 100%, 0.9);
+}
+
+.main-navigation ul{
+    
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+    padding-left: 0;
+}
+
+.main-navigation ul > li{
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+
+/* Tables
+############################################################################ */
+
+table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+table td, table th{
+    text-align: left;
+    padding: 0.2rem 0.5rem;
+    border-top: solid 1px #ddd;
+}
+
+table + figcaption{
+    border-top: solid 3px #ddd;
+    border-left: none;
+    padding-left: 0;
+}
+
+table th{
+    font-weight: normal
+}
+
+table thead th{
+    font-weight: bold;
+}
+
+
+/* Definition List
+############################################################################ */
+
+dl dt{
+    font-weight: bold;
+    float: left;
+    padding-right: 0.3ch;
+}
+
+dl dt::after{
+    content: ": ";
+}
